@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.TheThree.TlesStore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TlesStore"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RegistrarEstadoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarFotoPerfilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarINEActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AcuerdosLegalesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarNombreTiendaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarNombreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".RegistrarStoreActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TlesStore.NoActionBar" />
+    </application>
+
+</manifest>

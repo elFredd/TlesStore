@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarStoreActivity">
+
+    <TextView
+        android:id="@+id/tvMensajeIniciar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/tvMensajeBienvenida"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensaje_bienvenido"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/tvSinCompletar"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="@string/pasos_aprovar"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llSinCompletar"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:id="@+id/tvEnEspera"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="@string/pasos_en_revision"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llEnEspera"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvCompletar"
+        android:visibility="gone"
+        android:layout_marginLeft="25dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="@string/pasos_revisados"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llCompletar"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+    
+
+
+
+
+</LinearLayout>
